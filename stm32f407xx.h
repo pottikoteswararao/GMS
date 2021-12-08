@@ -205,7 +205,7 @@ typedef struct
 #define UART5_PCLK_DIS()		(RCC->APB1ENR &= ~(1<<20))
 #define USART6_PCLK_DIS()		(RCC->APB2ENR &= ~(1<<6))
 
-#define SYSCFG_PCLK_DIS()	(RCC->APB2ENR &= ~(1<<14))
+#define SYSCFG_PCLK_DIS()		(RCC->APB2ENR &= ~(1<<14))
 
 /*
  * Some generic Macros
