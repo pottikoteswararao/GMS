@@ -30,7 +30,7 @@
 
 #define APB1PERIPH_BASEADDR				0x40000000U
 #define APB2PERIPH_BASEADDR				0x40010000U
-#define AHB1PERIPH_BASEADDR 			0x40020000U
+#define AHB1PERIPH_BASEADDR 				0x40020000U
 #define AHB2PERIPH_BASEADDR				0x50000000U
 #define AHB3PERIPH_BASEADDR				0xA0000000U
 
@@ -83,15 +83,15 @@ typedef struct
 {
 	 //sequence of peripherals should not be changed, becuse OP code is defined internally in this sequence
 
-	__vo uint32_t MODER;	// Mode register
-	__vo uint32_t OTYPER;	// Output type register
-	__vo uint32_t OSPEEDR;	// Output speed register
-	__vo uint32_t PUPDR;	// Port Pull up Pull down register
+	__vo uint32_t MODER;		// Mode register
+	__vo uint32_t OTYPER;		// Output type register
+	__vo uint32_t OSPEEDR;		// Output speed register
+	__vo uint32_t PUPDR;		// Port Pull up Pull down register
 	__vo uint32_t IDR;		// Input data register
 	__vo uint32_t ODR;		// Output data register
 	__vo uint32_t BSRR;		// Bit set/reset register
 	__vo uint32_t LCKR;		// port configuration lock register
-	__vo uint32_t AFR[2];	// Alternate function register. 0 --> low and 1 ---> High
+	__vo uint32_t AFR[2];		// Alternate function register. 0 --> low and 1 ---> High
 }GPIO_RegDef_t;
 
 typedef struct
@@ -141,7 +141,7 @@ typedef struct
 #define GPIOG				((GPIO_RegDef_t*)GPIOG_BASEADDR)
 #define GPIOH				((GPIO_RegDef_t*)GPIOH_BASEADDR)
 #define GPIOI				((GPIO_RegDef_t*)GPIOI_BASEADDR)
-#define RCC					((RCC_RegDef_t*)RCC_BASEADDR)
+#define RCC				((RCC_RegDef_t*)RCC_BASEADDR)
 
 /*
  * Clock Enable Macros for GPIOx, I2Cx, SPIx, UARTx Peripherals
@@ -213,10 +213,10 @@ typedef struct
 
 #define ENABLE			1
 #define DISABLE			0
-#define SET				ENABLE
+#define SET			ENABLE
 #define RESET			DISABLE
-#define GPIO_PIN_SET	ENABLE
-#define GPIO_PIN_RESET	DISABLE
+#define GPIO_PIN_SET		ENABLE
+#define GPIO_PIN_RESET		DISABLE
 
 /*
  * GPIO Resetting
